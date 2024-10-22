@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Comment({ index, handleCloseComment }) {
+function Comment() {
   const [commentText, setCommentText] = useState('');
   const [list, setList] = useState([]);
 
@@ -14,9 +14,6 @@ function Comment({ index, handleCloseComment }) {
   return (
     <div className="relative">
       <div className="comment-card bg-white shadow-lg rounded-md h-40 w-full overflow-auto p-2">
-        <button type="button" className="ml-auto z-50" onClick={() => handleCloseComment(index)}>
-          <i className="ri-close-line text-[1.3em]"></i>
-        </button>
         <ul>
           {list.map((text, i) => (
             <li key={i}>{text}</li>

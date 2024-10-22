@@ -10,7 +10,7 @@ const Router = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/" element={<Navigate to="/home" />} /> 
         <Route path="/home" element={<Home />} />
         <Route path="/liked" element={<Liked />} />
         <Route path="/favourite" element={<Favourite />} />

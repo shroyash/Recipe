@@ -14,6 +14,7 @@ export const fetchRecipe = async (query) => {
                 q: query
             }
         });
+        console.log(response.data);
         return response.data.hits;
     } catch (error) {
         console.error('Error fetching recipe:', error);

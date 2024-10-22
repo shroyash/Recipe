@@ -54,7 +54,7 @@ const Search = () => {
       <Container>
         <div className="search-form d-flex justify-content-center mt-2 mb-[60px]">
           <form onSubmit={handleSubmit} className='flex items-center justify-center w-[80%]'>
-            <input
+            <input 
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}

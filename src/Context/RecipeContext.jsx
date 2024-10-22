@@ -11,7 +11,7 @@ export const RecipeProvider = ({ children }) => {
     const storedFavorites = localStorage.getItem('favorites'); 
     return storedFavorites ? JSON.parse(storedFavorites) : {};
   });
-
+ 
 
   return (
     <RecipeContext.Provider value={{isLoading,setIsLoading, recipes, setRecipes, favorites, setFavorites,showComment,setShowComment }}>
